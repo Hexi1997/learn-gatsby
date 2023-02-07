@@ -47,7 +47,10 @@
   "prettier.configPath": "",
   // Use workspace ts version
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["tailwindcss"],
+  "cSpell.words": [
+    "stylelint",
+    "tailwindcss"
+  ],
   "blueprint.templatesPath": [".vscode/blueprint-templates"],
   "css.lint.unknownAtRules": "ignore"
 }
