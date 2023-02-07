@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "my-gatsby-site",
-  "author": "Hexi1997",
+  "author": "White Matrix",
   "keywords": [
     "gatsby"
   ],
@@ -16,7 +16,11 @@
     "typecheck": "tsc --noEmit",
     "build": "gatsby clean && cross-env BUILD_ENV=beta gatsby build",
     "build:beta": "gatsby clean && cross-env BUILD_ENV=beta gatsby build",
-    "build:prod": "gatsby clean && cross-env BUILD_ENV=production gatsby build"
+    "build:prod": "gatsby clean && cross-env BUILD_ENV=production gatsby build",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint": "eslint -c ./.eslintrc.js --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
     "classnames": "^2.3.2",
@@ -38,11 +42,21 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/react-helmet": "^6.1.6",
+    "@white-matrix/eslint-config": "^1.2.6",
+    "@white-matrix/prettier-config": "^1.1.2",
     "autoprefixer": "^10.4.13",
     "cross-env": "^7.0.3",
+    "eslint-plugin-gatsby": "^1.0.2",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-eslint": "^4.0.3",
     "gatsby-plugin-postcss": "^6.5.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
     "postcss": "^8.4.21",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-prettier": "^2.0.0",
     "tailwindcss": "^3.2.4",
     "typescript": "^4.9.5"
   }
