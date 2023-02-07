@@ -1,0 +1,9 @@
+[context.main]
+  command = "yarn build:prod"
+  [[context.main.plugins]]
+    package = "@netlify/plugin-sitemap"
+
+[context.develop]
+  command = "yarn build:beta"
+  [[context.develop.plugins]]
+    package = "@netlify/plugin-sitemap"
