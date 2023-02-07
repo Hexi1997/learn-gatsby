@@ -1,0 +1,8 @@
+{
+    "cSpell.words": [
+        "tailwindcss"
+    ],
+    "blueprint.templatesPath": [
+        ".vscode/blueprint-templates",
+    ],
+}

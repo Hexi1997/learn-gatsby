@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
+import path from 'path';
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -10,6 +11,7 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    'gatsby-plugin-postcss',
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
@@ -28,7 +30,18 @@ const config: GatsbyConfig = {
         "path": "./src/images/"
       },
       __key: "images"
-    }
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          '@': path.resolve(__dirname, 'src'),
+          '@pages': path.resolve(__dirname, 'src/pages'),
+          '@components': path.resolve(__dirname, 'src/components')
+        },
+        extensions: []
+      }
+    },
   ]
 };
 
