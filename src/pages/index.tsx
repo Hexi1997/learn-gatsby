@@ -1,8 +1,9 @@
 import React from "react"
 import type { PageProps } from "gatsby"
 import { Helmet } from 'react-helmet';
-
+import { BASE_URL } from 'gatsby-env-variables';
 const IndexPage: React.FC<PageProps> = () => {
+  console.log(BASE_URL)
   return (
     <main>
       <Helmet title="home page"/>

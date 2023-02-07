@@ -12,6 +12,7 @@ const config: GatsbyConfig = {
   graphqlTypegen: true,
   plugins: [
     'gatsby-plugin-postcss',
+    'gatsby-env-variables',
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",

@@ -3523,6 +3523,13 @@ create-gatsby@^3.5.0:
   dependencies:
     "@babel/runtime" "^7.20.7"
 
+cross-env@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.3.tgz#865264b29677dc015ba8418918965dd232fc54cf"
+  integrity sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==
+  dependencies:
+    cross-spawn "^7.0.1"
+
 cross-fetch@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
@@ -3541,7 +3548,7 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cross-spawn@^7.0.2, cross-spawn@^7.0.3:
+cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
   integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
@@ -4987,6 +4994,11 @@ gatsby-core-utils@^4.5.0:
     resolve-from "^5.0.0"
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
+
+gatsby-env-variables@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-env-variables/-/gatsby-env-variables-2.0.0.tgz#7ce2a0de6fe21fbfaf1a70afae9c7176178c01e9"
+  integrity sha512-j9VsPrhIk45Plg2lb8bjq8+mFyFl7tB+H187PTMhZpKNa+o+RRAKyZqDTT9trRBW/nDivnW0/fSGyFSsY4Iy+g==
 
 gatsby-graphiql-explorer@^3.5.0:
   version "3.5.0"
