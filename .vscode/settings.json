@@ -49,7 +49,9 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "cSpell.words": [
     "stylelint",
-    "tailwindcss"
+    "tailwindcss",
+    "toastify",
+    "typecheck"
   ],
   "blueprint.templatesPath": [".vscode/blueprint-templates"],
   "css.lint.unknownAtRules": "ignore"
